@@ -1,0 +1,13 @@
+navigator {
+  width: 150px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #DDD;
+  color: #000;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.hover {
+  opacity: 0.8;
+}

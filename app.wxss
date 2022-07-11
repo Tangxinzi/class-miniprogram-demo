@@ -1,0 +1,48 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  box-sizing: border-box;
+} 
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vertical.centered > view {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+  align-items: center;
+}
+
+.image > image {
+  width: 100%;
+}
+
+.header {
+  font-size: 32px;
+  font-family: serif;
+}
+
+form {
+  width: 100vw;
+}
+
+/* 页面组件 header */
+.container-component .header-component {
+  padding: 20px;
+  min-height: 100px;
+  text-align: center;
+}
+
+.container-component .header-component .title {
+  display: block;
+  margin-bottom: 10px;
+}

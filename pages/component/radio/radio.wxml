@@ -1,0 +1,22 @@
+<view class="container-component">
+  <view class="header-component">
+    <text class="title">radio</text>
+    <text class="description">单选框</text>
+  </view>
+  <view class="body-component">
+    <form bindsubmit="bindSubmitForm">
+      <radio-group name="radio" bindchange="bindChange">
+        <view class="radio" wx:for="{{ country }}" wx:key="country">
+          <label>
+            <radio 
+              value="{{ item.value }}"
+              checked="{{ item.checked }}"
+            />
+            <text>{{ item.name }}</text>        
+          </label>
+        </view>
+        <button form-type="submit" type="primary">提交</button>
+      </radio-group>
+    </form>
+  </view>
+</view>

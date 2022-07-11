@@ -1,0 +1,22 @@
+<view class="container-component">
+  <view class="header-component">
+    <text class="title">checkbox</text>
+    <text class="description">复选框</text>
+  </view>
+  <view class="body-component">
+    <form bindsubmit="bindSubmitForm">
+      <checkbox-group name="checkbox" bindchange="bindChange">
+        <view class="checkbox" wx:for="{{ country }}" wx:key="country">
+          <label>
+            <checkbox 
+              value="{{ item.value }}"
+              checked="{{ item.checked }}"
+            />
+            <text>{{ item.name }}</text>        
+          </label>
+        </view>
+        <button form-type="submit" type="primary">提交</button>
+      </checkbox-group>
+    </form>
+  </view>
+</view>

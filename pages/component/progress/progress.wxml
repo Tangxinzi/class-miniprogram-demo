@@ -1,0 +1,9 @@
+<view class="container-component">
+  <view class="header-component">
+    <text class="title">progress</text>
+    <text class="description">进度条</text>
+  </view>
+  <view class="body-component">
+    <progress percent="30" show-info="{{ true }}" border-radius="4" stroke-width="4" activeColor="#000" backgroundColor="#e3e3e3" active="{{ true }}" />
+  </view>
+</view>

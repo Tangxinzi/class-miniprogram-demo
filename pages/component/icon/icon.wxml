@@ -1,0 +1,9 @@
+<view class="container-component">
+  <view class="header-component">
+    <text class="title">icon</text>
+    <text class="description">图标</text>
+  </view>
+  <view class="body-component centered">
+    <icon type="success" size="30" color="red" />
+  </view>
+</view>

@@ -1,0 +1,15 @@
+<view class="container-component">
+  <view class="header-component">
+    <text class="title">map</text>
+    <text class="description">地图</text>
+  </view>
+  <view class="body-component centered">
+    <map
+      longitude="116.397128"
+      latitude="39.916527"
+      scale="15"
+      show-compass="{{ true }}"
+      markers="{{ markers }}"
+    ></map>
+  </view>
+</view>

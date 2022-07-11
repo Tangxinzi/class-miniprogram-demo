@@ -1,0 +1,24 @@
+<view class="container-component">
+  <view class="header-component">
+    <text class="title">textarea</text>
+    <text class="description">多行输入框</text>
+  </view>
+  <view class="body-component">
+    <form bindsubmit="bindSubmitForm">
+      <label for="textarea">Textarea</label>
+      <textarea 
+        id="textarea"
+        name="textarea"
+        class="textarea"
+        placeholder="输入..."
+        placeholder-style="font-size: 14px;"
+        value=""
+        password="{{ false }}"
+        disabled="{{ false }}"
+        bindinput="bindInputChange"
+      >
+      </textarea>
+      <button form-type="submit" type="primary">提交</button>
+    </form>
+  </view>
+</view>

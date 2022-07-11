@@ -1,0 +1,21 @@
+<view class="container-component">
+  <view class="header-component">
+    <text class="title">video</text>
+    <text class="description">视频</text>
+  </view>
+  <view class="body-component centered">
+    <video 
+      src="http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4"
+      poster="https://i.postimg.cc/HkcbLYwf/pexels-ben-mack-5707732.jpg"
+      object-fit="cover"
+      title="video demo"
+      autoplay="{{ false }}"
+      muted="{{ true }}"
+      show-mute-btn="{{ true }}"
+      initial-time="0"
+      bindplay="bindPlay"
+      bindpause="bindPause"
+      bindended="bindEnded"
+    ></video>
+  </view>
+</view>

@@ -1,0 +1,17 @@
+<view class="container-component">
+  <view class="header-component">
+    <text class="title">image</text>
+    <text class="description">图片</text>
+  </view>
+  <view class="body-component centered">
+    <block wx:for="{{ mode }}" wx:key="mode">
+      <image
+        src="https://i.postimg.cc/HkcbLYwf/pexels-ben-mack-5707732.jpg"
+        mode="{{ item }}"
+        show-menu-by-longpress="{{ true }}"
+        lazy-load="{{ true }}"
+      />    
+      <text class="mode">{{ item }}</text>
+    </block>
+  </view>
+</view>

@@ -1,0 +1,49 @@
+<view class="container-component">
+  <view class="header-component">
+    <text class="title">picker</text>
+    <text class="description">滚动选择器</text>
+  </view>
+  <view class="body-component">
+    <form bindsubmit="bindSubmitForm">
+      <!-- <label>Selector 普通选择器</label>
+      <picker
+        mode="selector"
+        range="{{ selector }}"
+        bindchange="bindChangePicker"
+      >
+        <text>当前选择：{{ selector[picker] }}</text>
+      </picker> -->
+
+      <!-- <label>Time 时间选择器</label>
+      <picker
+        mode="time"
+        start="09:00"
+        end="17:59"
+        value="{{ picker }}"
+        bindchange="bindChangePicker"
+      >
+        <text>当前选择：{{ picker }}</text>
+      </picker> -->
+    
+      <!-- <label>Date 日期选择器</label>
+      <picker
+        mode="date"
+        start="2000-01-01"
+        end="2030-12-31"
+        value="{{ picker }}"
+        bindchange="bindChangePicker"
+      >
+        <text>当前选择：{{ picker }}</text>
+      </picker> -->
+
+      <label>Region 省市区选择器</label>
+      <picker
+        mode="region"
+        value="{{ picker }}"
+        bindchange="bindChangePicker"
+      >
+        <text>当前选择：{{ picker }}</text>
+      </picker>
+    </form>
+  </view>
+</view>

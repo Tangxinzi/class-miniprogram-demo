@@ -1,0 +1,18 @@
+<view class="container-component">
+  <view class="header-component">
+    <text class="title">button</text>
+    <text class="description">按钮</text>
+  </view>
+  <view class="body-component centered">
+    <button
+      size="default"
+      type="primary"
+      plain="{{ false }}"
+      hover-class="hover"
+      bindtap="bindtapButton"
+      form-type="submit"
+      open-type="getUserInfo"
+      bindgetuserinfo="getUserInfo"
+    >按钮</button>
+  </view>
+</view>

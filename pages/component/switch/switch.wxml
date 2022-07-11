@@ -1,0 +1,16 @@
+<view class="container-component">
+  <view class="header-component">
+    <text class="title">switch</text>
+    <text class="description">开关选择器</text>
+  </view>
+  <view class="body-component centered">
+    <switch
+      checked="{{ checked }}"
+      bindchange="bindChangeSwitch"
+      type="switch"
+      color="#000"
+    >
+      <text>{{ checked ? '开启' : '关闭' }}</text>
+    </switch>
+  </view>
+</view>

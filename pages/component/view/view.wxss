@@ -1,0 +1,28 @@
+.container-component .body-component {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+.container-component .body-component view { 
+  width: 100%;
+  height: 100%;
+  flex: 1;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.light {
+  opacity: 0.75;
+}

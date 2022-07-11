@@ -1,0 +1,20 @@
+<view class="container-component">
+  <view class="header-component">
+    <text class="title">movable-view</text>
+    <text class="description">可移动的视图容器</text>
+  </view>
+  <view class="body-component">
+    <movable-area>
+      <movable-view
+        direction="all"
+        inertia="{{ true }}"
+        out-of-bounds="{{ true }}"
+        x="30"
+        y="30"
+        scale="{{ true }}"
+        damping="30"
+        hriction="5"
+      />
+    </movable-area>
+  </view>
+</view>

@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/component/map/map",
+    "pages/component/video/video",
+    "pages/component/camera/camera",
+    "pages/component/image/image",
+    "pages/component/navigator/navigator",
+    "pages/component/button/button",
+    "pages/component/switch/switch",
+    "pages/component/picker/picker",
+    "pages/component/radio/radio",
+    "pages/component/checkbox/checkbox",
+    "pages/component/textarea/textarea",
+    "pages/component/input/input",
+    "pages/component/slider/slider",
+    "pages/component/rich-text/rich-text",
+    "pages/component/progress/progress",
+    "pages/component/icon/icon",
+    "pages/component/text/text",
+    "pages/component/movable-area/movable-area",
+    "pages/component/scroll-view/scroll-view",
+    "pages/component/swiper/swiper",
+    "pages/component/view/view",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#FFF",
+    "navigationBarTitleText": "小程序开发",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false,
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

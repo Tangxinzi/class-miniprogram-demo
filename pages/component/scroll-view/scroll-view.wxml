@@ -1,0 +1,24 @@
+<view class="container-component">
+  <view class="header-component">
+    <text class="title">scroll-view</text>
+    <text class="description">可滚动视图容器</text>
+  </view>
+  <scroll-view
+    scroll-y="{{ true }}"
+    style="height: 300px;"
+    scroll-into-view="{{ view }}"
+    scroll-with-animation="{{ true }}"
+    scroll-top="0"
+    refresher-enabled="{{ true }}"
+    bindscroll="bindScrollView"
+  >
+    <view class="body-component">
+      <view id="red" class="red" hover-class="light"></view>
+      <view id="yellow" class="yellow" hover-class="light"></view>
+      <view id="blue" class="blue" hover-class="light"></view>
+    </view>
+  </scroll-view>
+  <button bindtap="setScrollView" data-view="red">red</button>
+  <button bindtap="setScrollView" data-view="yellow">yellow</button>
+  <button bindtap="setScrollView" data-view="blue">blue</button>
+</view>

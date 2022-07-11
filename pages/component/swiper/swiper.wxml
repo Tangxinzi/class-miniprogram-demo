@@ -1,0 +1,30 @@
+<view class="container-component">
+  <view class="header-component">
+    <text class="title">swiper</text>
+    <text class="description">滑块视图容器</text>
+  </view>
+  <view class="body-component">
+    <swiper 
+      circular="{{ circular }}" 
+      autoplay="{{ autoplay }}"
+      interval="2500"
+      indicator-dots="{{ true }}"
+      indicator-color="#FFF"
+      indicator-active-color="#e3e3e3"
+      current="2"
+      duration="400"
+      vertical="{{ false }}"
+      previous-margin="0"
+      next-margin="0"
+      display-multiple-items="1"
+      easing-function="easeInOutCubic"
+      bindchange="bindchangeSwiper"
+    >
+      <block wx:for="{{ images }}">
+        <swiper-item>
+          <image src="{{ item }}" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</view>

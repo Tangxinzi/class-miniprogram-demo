@@ -1,0 +1,11 @@
+movable-area {
+  width: 100vw;
+  height: 50vh;
+  background-color: #ededed;
+}
+
+movable-view {
+  width: 80px;
+  height: 80px;
+  background-color: #000;
+}

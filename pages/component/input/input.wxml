@@ -1,0 +1,24 @@
+<view class="container-component">
+  <view class="header-component">
+    <text class="title">input</text>
+    <text class="description">输入框</text>
+  </view>
+  <view class="body-component">
+    <form bindsubmit="bindSubmitForm">
+      <label for="input">Input</label>
+      <input 
+        id="input"
+        type="text"
+        name="input"
+        class="input"
+        placeholder="输入..."
+        placeholder-style="font-size: 14px;"
+        value=""
+        password="{{ false }}"
+        disabled="{{ false }}"
+        bindinput="bindInputChange"
+      />
+      <button form-type="submit" type="primary">提交</button>
+    </form>
+  </view>
+</view>

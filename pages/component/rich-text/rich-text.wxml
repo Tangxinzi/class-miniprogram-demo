@@ -1,0 +1,9 @@
+<view class="container-component">
+  <view class="header-component">
+    <text class="title">rich-text</text>
+    <text class="description">富文本</text>
+  </view>
+  <view class="body-component centered">
+    <rich-text nodes="{{ nodes }}" />
+  </view>
+</view>

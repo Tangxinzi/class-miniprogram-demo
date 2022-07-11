@@ -1,0 +1,26 @@
+<view class="container-component">
+  <view class="header-component">
+    <text class="title">slider</text>
+    <text class="description">滑动选择器</text>
+  </view>
+  <view class="body-component">
+    <form bindsubmit="bindSubmitForm">
+      <label for="slider" class="label">Slider</label>
+      <slider
+        id="slider"
+        name="slider"
+        show-value="{{ true }}"
+        min="1"
+        max="100"
+        value="1"
+        step="1"
+        block-color="#000"
+        activeColor="#333"
+        backgroundColor="#e3e3e3"
+        block-size="18"
+        bindchange="bindChangeSlider"
+      />    
+      <button type="primary" form-type="submit">提交</button>
+    </form>
+  </view>
+</view>

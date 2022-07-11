@@ -1,0 +1,17 @@
+<view class="container-component">
+  <view class="header-component">
+    <text class="title">navigator</text>
+    <text class="description">导航</text>
+  </view>
+  <view class="body-component centered">
+    <block wx:for="{{ navigator }}" wx:key="navigator">
+      <navigator
+        url="{{ item.url }}"
+        open-type="{{ item.openType }}"
+        hover-class="{{ item.hoverClass }}"
+      >
+        {{ item.text }}
+      </navigator>
+    </block>
+  </view>
+</view>
