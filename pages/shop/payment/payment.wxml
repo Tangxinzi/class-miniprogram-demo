@@ -1,0 +1,57 @@
+<view class="page product">
+  <!-- 收货地址 -->
+  <view class="product-other-info">
+    <view class="product-title flex-between">
+      <view class="title">
+        <view class="name">姓名 手机号</view>
+        <view class="address">收货地址</view>
+      </view>
+      <image class="icon" src="/assets/icon/product-right.png" mode="aspectFill" />
+    </view>
+  </view>
+
+  <!-- 产品基本信息 -->
+  <view class="product-info">
+    <image src="{{ good.images[0] }}" mode="aspectFill" />
+    <view class="content">
+      <view class="title">{{ good.info.title }}</view>
+      <view class="tags">
+        <text class="tag" wx:for="{{ good.info.tags }}" wx:key="tags">{{ item }}</text>
+      </view>
+      <view class="foot">
+        <text class="price">¥{{ good.info.marketPrice }}</text>
+        <text class="number">×1</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 产品其它信息 -->
+  <view class="product-other-info">
+    <view class="product-title mt10 flex-between">
+      <text class="title">商品金额</text>
+      <text class="desc">¥ -</text>
+    </view>
+    <view class="product-title flex-between">
+      <text class="title">运费</text>
+      <text class="desc">¥ -</text>
+    </view>
+    <view class="product-title flex-between">
+      <text class="title"></text>
+      <text>总计：¥ -</text>
+    </view>
+    <view class="product-title mt10 flex-between">
+      <text class="title">支付方式</text>
+      <text class="desc">微信支付</text>
+    </view>
+    <view class="product-title flex-between">
+      <text class="title">订单备注</text>
+      <input type="text" style="text-align: right;" placeholder="填写订单备注信息" />
+    </view>
+  </view>
+
+  <!-- 产品底部区域 -->
+  <view class="product-bottom">
+    <text>总计：¥ -</text>
+    <view class="button buy">支付</view>
+  </view>
+</view>

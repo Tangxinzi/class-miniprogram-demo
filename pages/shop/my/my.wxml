@@ -1,0 +1,22 @@
+<view class="page my">
+  <!-- 用户基本信息 -->
+  <view class="user">
+    <image class="avatar" src="https://mmbiz.qpic.cn/mmbiz/icTdbqWNOwNRna42FI242Lcia07jQodd2FJGIYQfG0LAJGFxM4FbnQP6yfMxBgJ0F3YRqJCJ1aPAK2dQagdusBZg/0" mode="aspectFill" />
+    <text class="nickname">WeChat Shop</text>
+  </view>
+
+  <!-- 订单状态 -->
+  <view class="orders box">
+    <navigator url="/pages/shop/order/order" class="order" hover-class="none" wx:for="{{ orders }}" wx:key="orders">
+      <image src="{{ item.image }}" mode="aspectFill" />
+      <text>{{ item.text }}</text>
+    </navigator>
+  </view>
+
+  <!-- 服务信息 -->
+  <view class="services list">
+    <view class="service" wx:for="{{ services }}" wx:key="services">
+      <text>{{ item }}</text>
+    </view>
+  </view>
+</view>

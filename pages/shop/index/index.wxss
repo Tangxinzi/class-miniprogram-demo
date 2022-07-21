@@ -1,0 +1,76 @@
+/* 首页轮播视图区域 */
+.index-swiper, .index-swiper image {
+  width: 100vw;
+  height: 180px;
+}
+
+/* 首页 ICONS 区域 */
+.index-icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.index-icons .icon {
+  width: 20vw;
+  font-size: 13px;
+  text-align: center;
+}
+
+.index-icons .icon image {
+  width: 45px;
+  height: 45px;
+  display: block;
+  margin: 16px auto 8px;
+}
+
+/* 首页商品列表区域 */
+.index-goods {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px 0 10px 10px;
+}
+
+.index-goods .good {
+  width: calc((100vw - 30px) / 2);
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.index-goods .good image {
+  width: 100%;
+  height: 180px;
+}
+
+.index-goods .good .price {
+  color: #f83b6b;
+  font-weight: 600;
+  font-size: 15px;
+  margin-right: 6px;
+}
+
+.index-goods .good .sale, .index-goods .good .number {
+  color: #888;
+  font-weight: 400;
+  font-size: 13px;
+  margin-right: 6px;
+  text-decoration: line-through;
+}
+
+.index-goods .good .number {
+  text-decoration: none;
+}
+
+.index-goods .good .tag {
+  font-size: 11px;
+  margin-right: 6px;
+  color: #ff58a2;
+  background-color: rgba(255, 88, 162, .12);
+  padding: 2px 5px;
+  border-radius: 3px;
+}

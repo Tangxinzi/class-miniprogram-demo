@@ -1,0 +1,65 @@
+<view class="page product">
+  <!-- 产品轮播视图区域 -->
+  <swiper class="product-swiper" autoplay="{{ true }}" circular="{{ true }}" indicator-dots="{{ true }}">
+    <swiper-item wx:for="{{ good.images }}" wx:key="images">
+      <image src="{{ item }}" mode="aspectFill" />
+    </swiper-item>
+  </swiper>
+
+  <!-- 产品基本信息 -->
+  <view class="product-info">
+    <view class="head">
+      <text class="price">¥{{ good.info.marketPrice }}</text>
+      <text class="sale" style="text-decoration: line-through;">¥{{ good.info.salePrice }}</text>
+      <text class="number">已售{{ good.info.saleNumber }}</text>
+    </view>
+    <text class="title">{{ good.info.title }}</text>
+    <view class="tags">
+      <text class="tag" wx:for="{{ good.info.tags }}" wx:key="tags">{{ item }}</text>
+    </view>
+  </view>
+
+  <!-- 产品其它信息 -->
+  <view class="product-other-info">
+    <view class="product-title mt10 flex-between">
+      <text class="title">配送</text>
+      <text class="desc">[配送地址]</text>
+    </view>
+    <view class="product-title flex-between">
+      <text class="title">运费</text>
+      <text class="desc">订单满 88 免邮</text>
+    </view>
+    <view class="product-title flex-between">
+      <text class="title">商品参数</text>
+      <image class="icon" src="/assets/icon/product-down.png" mode="aspectFill" />
+    </view>
+    <view class="product-title flex-between">
+      <text class="title">常见问题</text>
+      <image class="icon" src="/assets/icon/product-down.png" mode="aspectFill" />
+    </view>
+    <view class="product-title mt10">
+      <text class="title">图文详情</text>
+    </view>
+    <rich-text nodes="{{ good.detail }}"></rich-text>
+  </view>
+
+  <!-- 产品底部区域 -->
+  <view class="product-bottom">
+    <view class="bottom-box">
+      <view class="box">
+        <image class="image" src="/assets/icon/product-contact.png" mode="aspectFill" />
+        <text class="text">客服</text>
+      </view>
+      <view class="box">
+        <image class="image" src="/assets/icon/product-heart.png" mode="aspectFill" />
+        <text class="text">收藏</text>
+      </view>
+      <navigator url="/pages/shop/cart/cart" open-type="switchTab" class="box" hover-class="none">
+        <image class="image" src="/assets/icon/product-cart.png" mode="aspectFill" />
+        <text class="text">购物车</text>
+      </navigator>
+    </view>
+    <view class="button cart">加入购物车</view>
+    <navigator url="/pages/shop/payment/payment" class="button buy" hover-class="none">立即购买</navigator>
+  </view>
+</view>

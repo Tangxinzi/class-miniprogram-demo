@@ -1,0 +1,35 @@
+<view class="page order">
+  <!-- 状态栏切换 -->
+  <view class="top status">
+    <text 
+      class="{{ statusText == item ? 'active' : '' }}"
+      bindtap="switchStatus"
+      data-text="{{ item }}"
+      wx:for="{{ status }}" 
+      wx:key="status"
+    >{{ item }}</text>
+  </view>
+
+  <!-- 产品基本信息 -->
+  <view class="products">
+    <view class="product" wx:for="{{ [0, 1, 2, 3, 4] }}" wx:key="product">
+      <view class="product-head">
+        <text>2022-07-19 完成</text>
+        <text>查看物流</text>
+      </view>
+      <view class="product-content">
+        <image src="{{ good.images[0] }}" mode="aspectFill" />
+        <view class="content">
+          <view class="title">{{ good.info.title }}</view>
+          <view class="tags">
+            <text class="tag" wx:for="{{ good.info.tags }}" wx:key="tags">{{ item }}</text>
+          </view>
+          <view class="foot">
+            <text class="price">¥{{ good.info.marketPrice }}</text>
+            <text class="number">×1</text>
+          </view>
+        </view>    
+      </view>
+    </view>
+  </view>
+</view>

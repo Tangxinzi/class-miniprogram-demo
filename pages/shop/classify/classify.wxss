@@ -1,0 +1,60 @@
+/* 商品目录区域 */
+.left {
+  float: left;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.category-items {
+  background-color: #f8f8f8;
+  font-size: 14px;
+  text-align: center;
+  width: 25vw;
+  min-height: 100vh;
+}
+
+.category-items .item {
+  height: 45px;
+  line-height: 45px;
+}
+
+.category-items .item.active {
+  background-color: #FFF;
+  color: red;
+}
+
+/* 商品内容区域 */
+.right {
+  float: right;
+}
+
+.category-contents {
+  width: 75vw;
+  padding: 8px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.category-contents .good {
+  width: 33.33%;
+}
+
+.category-contents .good image {
+  width: 70px;
+  height: 70px;
+  padding: 5px;
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
+}
+
+.category-contents .good .title {
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 10px;
+}

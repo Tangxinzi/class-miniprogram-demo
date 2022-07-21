@@ -1,0 +1,28 @@
+<view class="page classify">
+  <!-- 商品目录区域 -->
+  <view class="left category-items">
+    <view 
+      class="item {{ item == categoryActive ? 'active' : '' }}" 
+      wx:for="{{ category }}"
+      wx:key="category"
+      data-category="{{ item }}"
+      bindtap="setCategory"
+    >
+      {{ item }}
+    </view>
+  </view>
+
+  <!-- 商品内容区域 -->
+  <view class="right category-contents">
+    <navigator 
+      url="/pages/shop/product/product"
+      class="good"
+      hover-class="none"
+      wx:for="{{ goods }}"
+      wx:key="goods"
+    >
+      <image src="{{ item.image }}" mode="aspectFill" />
+      <text class="title">{{ item.title }}</text>
+    </navigator>
+  </view>
+</view>

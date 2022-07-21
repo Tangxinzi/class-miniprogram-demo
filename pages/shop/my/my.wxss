@@ -1,0 +1,65 @@
+/* 用户基本信息 */
+.user {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.user .avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: 1px solid #e8e8e8;
+  margin: 15px;
+}
+
+.user .nickname {
+  font-size: 14px;
+}
+
+/* 订单状态 */
+/* box */
+.box {
+  margin: 10px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+}
+
+/* orders */
+.orders .order {
+  font-size: 14px;
+  text-align: center;
+}
+
+.orders .order image {
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin: 0 auto 5px;
+}
+
+/* 服务信息 */
+/* list */
+.list {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+}
+
+/* services */
+.services .service {
+  font-size: 14px;
+  padding: 10px;
+}
+
+.services .service + .service {
+  border-top: 1px solid #e3e3e3;
+}

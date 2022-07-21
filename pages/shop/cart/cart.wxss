@@ -1,0 +1,93 @@
+/* 购物车商品区域 */
+.good {
+  margin: 10px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+}
+
+.good .good-content {
+  flex: 1;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.good .check, .bottom .check image {
+  width: 20px;
+  height: 20px;
+}
+
+.good .image {
+  width: 70px;
+  height: 70px;
+  margin: 0 10px;
+  border: 1px solid #e8e8e8;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.good .title {
+  font-size: 16px;
+}
+
+.good .foot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.good .foot .price {
+  color: red;
+}
+
+.good .foot .box {
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.good .foot .box text {
+  width: 30px;
+  padding: 3px;
+}
+
+.good .foot .box .number {
+  border-left: 1px solid #e8e8e8;
+  border-right: 1px solid #e8e8e8;
+}
+
+/* 购物车底部区域 */
+.bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 18px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-top: 1px solid #e8e8e8;
+}
+
+.bottom .check {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.bottom .button {
+  margin-left: 18px;
+  padding: 5px 10px;
+  background-color: coral;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+}

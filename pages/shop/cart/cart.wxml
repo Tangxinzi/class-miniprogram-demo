@@ -1,0 +1,32 @@
+<view class="page cart">
+  <!-- 购物车商品区域 -->
+  <view class="goods">
+    <view class="good" wx:for="{{ goods }}" wx:key="goods">
+      <image data-index="{{ index }}" bindtap="setGoodCheck" class="check" src="{{ item.check ? '/assets/icon/round-check.png' : '/assets/icon/round.png' }}" mode="aspectFill" />
+      <image class="image" src="{{ item.image }}" mode="aspectFill" />
+      <view class="good-content">
+        <text class="title">{{ item.title }}</text>
+        <view class="foot">
+          <view class="price">
+            ¥<text style="font-size: 20px; margin-left: 2px;">{{ item.salePrice }}</text>
+          </view>
+          <view class="box">
+            <text class="minus" data-index="{{ index }}" data-text="-" bindtap="setGoodNumber">ー</text>
+            <text class="number">{{ item.number }}</text>
+            <text class="puls" data-index="{{ index }}" data-text="+" bindtap="setGoodNumber">＋</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 购物车底部区域 -->
+  <view class="bottom">
+    <view class="check" bindtap="setAllGoodCheck">
+      <image class="image" src="{{ all ? '/assets/icon/round-check.png' : '/assets/icon/round.png' }}" mode="aspectFill" />
+      <text style="margin-left: 5px;">{{ all ? '取消' : '全选' }}</text>
+    </view>
+    <text>总计：¥{{ checkPrice }}</text>
+    <view class="button" style="background-color: {{ checkNum ? 'coral' : 'grey' }}">结算({{ checkNum }}件)</view>
+  </view>
+</view>

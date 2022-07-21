@@ -1,0 +1,48 @@
+<view class="page index">
+  <!-- 首页轮播视图区域 -->
+  <swiper 
+    class="index-swiper"
+    circular="{{ true }}" 
+    autoplay="{{ true }}"
+    interval="2500"
+    indicator-dots="{{ true }}"
+    indicator-color="#FFF"
+    indicator-active-color="#e3e3e3"
+    current="2"
+    duration="400"
+    vertical="{{ false }}"
+    previous-margin="0"
+    next-margin="0"
+    display-multiple-items="1"
+    easing-function="easeInOutCubic"
+    bindchange="bindchangeSwiper"
+  >
+    <swiper-item wx:for="{{ images }}" wx:key="images">
+      <image src="{{ item }}" mode="aspectFill" />
+    </swiper-item>
+  </swiper>
+
+  <!-- 首页 ICONS 区域 -->
+  <view class="index-icons">
+    <navigator url="/pages/shop/classify/classify" open-type="switchTab" hover-class="none" class="icon" wx:for="{{ icons }}" wx:key="icons">
+      <image src="{{ item.image }}" mode="aspectFill" />
+      <text>{{ item.text }}</text>
+    </navigator>
+  </view>
+
+  <!-- 首页商品列表区域 -->
+  <view class="index-goods">
+    <navigator url="/pages/shop/product/product" open-type="navigate" hover-class="none" class="good" wx:for="{{ goods }}" wx:key="goods">
+      <image src="{{ item.image }}" mode="aspectFill" />
+      <view>
+        <text class="price">¥{{ item.marketPrice }}</text>
+        <text class="sale">¥{{ item.salePrice }}</text>
+        <text class="number">已售{{ item.saleNumber }}</text>      
+      </view>
+      <text class="title">{{ item.title }}</text>
+      <view class="tags">
+        <text class="tag" wx:for="{{ item.tags }}" wx:for-item="tag" wx:key="tag">{{ tag }}</text>
+      </view>
+    </navigator>
+  </view>
+</view>

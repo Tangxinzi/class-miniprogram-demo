@@ -1,0 +1,126 @@
+.page.product {
+  background-color: #eeeeee;
+}
+
+/* 产品轮播视图区域 */
+.product-swiper, .product-swiper image {
+  width: 100vw;
+  height: 100vw;
+}
+
+/* 产品基本信息 */
+.product-info {
+  padding: 10px;
+  background-color: #FFF;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.product-info .title {
+  font-size: 20px;
+}
+
+.product-info .price {
+  color: #f83b6b;
+  font-weight: 600;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.product-info .sale, .product-info .number {
+  color: #888;
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.product-info .tag {
+  font-size: 11px;
+  margin-right: 6px;
+  color: #ff58a2;
+  background-color: rgba(255, 88, 162, .12);
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+/* 产品其它信息 */
+.product-other-info .product-title {
+  padding: 10px;
+  background-color: #FFF;
+  font-size: 14px;
+  margin-top: 1px;
+}
+
+.product-other-info .product-title .desc {
+  color: #888;
+}
+
+.product-other-info .mt10 {
+  margin-top: 10px;
+}
+
+.product-other-info .flex-between {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-other-info .icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* 产品底部区域 */
+.product-bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 10px 25px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #FFF;
+  border-top: 1px solid #e8e8e8;
+}
+
+.product-bottom .bottom-box {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-bottom .bottom-box .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-bottom .bottom-box .image {
+  width: 20px;
+  height: 20px;
+}
+
+.product-bottom .bottom-box .text {
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.product-bottom .button {
+  margin-left: 10px;
+  padding: 8px 20px;
+  width: 110px;
+  box-sizing: border-box;
+  font-size: 13px;
+  text-align: center;
+  border: 1px solid #888;
+  border-radius: 20px;
+}
+
+.product-bottom .button.buy {
+  background-color: rgb(255, 41, 76);
+  border: 1px solid rgb(255, 41, 76);
+  color: #FFF;
+}
