@@ -1,0 +1,21 @@
+.progress {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.progress .line {
+  flex: 1;
+  background-color: #c3c3c3;
+  width: 70vw;
+  height: 3px;
+  border-radius: 4px;
+}
+
+.progress text {
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+}

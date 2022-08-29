@@ -1,0 +1,16 @@
+<view class="container-component">
+  <view class="header-component">
+    <text class="title">数据缓存 - Storage</text>
+  </view>
+  <view class="body-component centered">
+    <view class="buttons">
+      <button type="primary" bindtap="setStorage">设置本地缓存</button>
+      <button type="primary" bindtap="getStorage">获取本地缓存</button>
+      <button type="primary" bindtap="removeStorage">移除本地缓存</button>
+      <button type="primary" bindtap="getStorageInfo">获取缓存信息</button>
+      <button type="primary" bindtap="clearStorage">清空本地缓存</button>
+      <button type="primary" bindtap="batchSetStorage">批量设置缓存</button>
+      <button type="primary" bindtap="batchGetStorage">批量获取缓存</button>
+    </view>
+  </view>
+</view>

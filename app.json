@@ -1,5 +1,5 @@
 {
-  "entryPagePath": "pages/shop/index/index",
+  "entryPagePath": "pages/api/base/base",
   "pages": [
     "pages/shop/index/index",
     "pages/shop/classify/classify",
@@ -31,7 +31,34 @@
     "pages/component/movable-area/movable-area",
     "pages/component/scroll-view/scroll-view",
     "pages/component/swiper/swiper",
-    "pages/component/view/view"
+    "pages/component/view/view",
+    "pages/api/ui/interaction/interaction",
+    "pages/api/ui/navigation-bar/navigation-bar",
+    "pages/api/ui/pull-down-refresh/pull-down-refresh",
+    "pages/api/ui/scroll/scroll",
+    "pages/api/ui/background/background",
+    "pages/api/ui/tab-bar/tab-bar",
+    "pages/api/route/route",
+    "pages/api/share/share",
+    "pages/api/storage/storage",
+    "pages/api/media/map/map",
+    "pages/api/media/audio/audio",
+    "pages/api/media/background-audio/background-audio",
+    "pages/api/media/recorder/recorder",
+    "pages/api/media/camera/camera",
+    "pages/api/media/video/video",
+    "pages/api/media/image/image",
+    "pages/api/media/editor/editor",
+    "pages/api/location/location",
+    "pages/api/device/clipboard/clipboard",
+    "pages/api/device/phone/phone",
+    "pages/api/device/scan/scan",
+    "pages/api/device/network/network",
+    "pages/api/device/battery/battery",
+    "pages/api/device/sms/sms",
+    "pages/api/device/vibrate/vibrate",
+    "pages/api/network/network",
+    "pages/api/base/base"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -56,6 +83,10 @@
         "text": "分类"
       },
       {
+        "pagePath": "pages/api/ui/tab-bar/tab-bar",
+        "text": "tabBar"
+      },
+      {
         "pagePath": "pages/shop/cart/cart",
         "iconPath": "assets/icon/cart-full.png",
         "selectedIconPath": "assets/icon/cart-full-fill.png",
@@ -73,6 +104,13 @@
     "request": 10000,
     "downloadFile": 10000
   },
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "requiredPrivateInfos": [
+    "getLocation",
+    "chooseLocation"
+  ],
   "debug": false,
   "style": "v2",
   "sitemapLocation": "sitemap.json"

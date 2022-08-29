@@ -15,6 +15,10 @@
   align-items: center;
 }
 
+.buttons button {
+  margin: 10px;
+}
+
 .vertical.centered > view {
   display: flex;
   height: 100vh;

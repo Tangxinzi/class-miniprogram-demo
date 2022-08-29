@@ -1,0 +1,9 @@
+<view class="container-component">
+  <view class="header-component">
+    <text class="title">设备 - 扫码</text>
+    <text class="description">{{ data }}</text>
+  </view>
+  <view class="body-component centered">
+    <button type="primary" bindtap="scan">扫码</button>
+  </view>
+</view>

@@ -1,0 +1,27 @@
+<!-- <view class="container-component">
+  <view class="header-component">
+    <text class="title">Media - 富文本</text>
+  </view>
+  <view class="body-component centered">
+    <editor id="editor" placeholder="输入内容..."></editor>
+    <view class="buttons">
+      <button type="primary" bindtap="insertDivider">分割线</button>
+      <button type="primary" bindtap="undo">撤销</button>
+      <button type="primary" bindtap="redo">恢复</button>
+      <button type="primary" bindtap="getContents">获取内容</button>
+    </view>
+  </view>
+</view> -->
+
+<!-- 富文本编辑器 -->
+<editor id="editor" placeholder="输入内容"></editor>
+<view class="toolbar">
+  <i class="iconfont icon-fengexian" bindtap="insertDivider"></i>
+  <i class="iconfont icon-zitijiacu" bindtap="format" data-name="bold" data-value=""></i>
+  <i class="iconfont icon-zitixieti" bindtap="format" data-name="italic" data-value=""></i>
+  <i class="iconfont icon-zitixiahuaxian" bindtap="format" data-name="underline" data-value=""></i>
+  <i class="iconfont icon--checklist" bindtap="format" data-name="list" data-value="check"></i>
+  <i class="iconfont icon-youxupailie" bindtap="format" data-name="list" data-value="ordered"></i>
+  <i class="iconfont icon-wuxupailie" bindtap="format" data-name="list" data-value="bullet"></i>
+  <i class="iconfont icon-clearup" bindtap="clear"></i>
+</view>

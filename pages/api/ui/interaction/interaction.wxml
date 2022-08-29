@@ -1,0 +1,13 @@
+<view class="container-component">
+  <view class="header-component">
+    <text class="title">界面 - 交互</text>
+  </view>
+  <view class="body-compoent centered">
+    <view class="buttons">
+      <button type="primary" bindtap="showToast">消息提示框</button>
+      <button type="primary" bindtap="showModal">模态对话框</button>    
+      <button type="primary" bindtap="showLoading">加载提示框</button>
+      <button type="primary" bindtap="showActionSheet">操作菜单</button>
+    </view>
+  </view>
+</view>

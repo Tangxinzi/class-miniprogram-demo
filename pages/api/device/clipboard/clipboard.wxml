@@ -1,0 +1,12 @@
+<view class="container-component">
+  <view class="header-component">
+    <text class="title">设备 - 剪贴板</text>
+    <text class="description">{{ data }}</text>
+  </view>
+  <view class="body-component centered">
+    <view class="buttons">
+      <button type="primary" bindtap="copy">复制</button>
+      <button type="primary" bindtap="paste">粘贴</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,14 @@
+<view class="container-component">
+  <view class="header-component">
+    <text class="title">路由 Route</text>
+  </view>
+  <view class="body-component centered">
+    <view class="buttons">
+      <button type="primary" bindtap="switchTab">switchTab</button>
+      <button type="primary" bindtap="reLaunch">reLaunch</button>
+      <button type="primary" bindtap="redirectTo">redirectTo</button>
+      <button type="primary" bindtap="navigateTo">navigateTo</button>
+      <button type="primary" bindtap="navigateBack">navigateBack</button>
+    </view>
+  </view>
+</view>

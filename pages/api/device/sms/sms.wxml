@@ -1,0 +1,8 @@
+<view class="container-component">
+  <view class="header-component">
+    <text class="title">设备 - 短信</text>
+  </view>
+  <view class="body-component centered">
+    <button type="primary" bindtap="sms">短信</button>
+  </view>
+</view>

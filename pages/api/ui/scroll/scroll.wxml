@@ -1,0 +1,13 @@
+<view class="container-component">
+  <view class="header-component">
+    <text class="title">界面 - 滚动</text>
+  </view>
+  <view class="body-component centered">
+    <view class="buttons">
+      <button type="primary" bindtap="pageScrollTo2000">滚动到页面 2000px</button>
+      <view style="height: 2000px;"></view>
+      <button type="primary" bindtap="pageScrollTo0">滚动到页面 0px</button>
+      <view style="height: 2000px;"></view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,13 @@
+<view class="container-component">
+  <view class="header-component">
+    <text class="title">Media - 录音</text>
+  </view>
+  <view class="body-component centered">
+    <view class="buttons">
+      <button type="primary" bindtap="start">开始</button>
+      <button type="primary" bindtap="pause">暂停</button>
+      <button type="primary" bindtap="resume">继续</button>
+      <button type="primary" bindtap="stop">停止</button>
+    </view>
+  </view>
+</view>

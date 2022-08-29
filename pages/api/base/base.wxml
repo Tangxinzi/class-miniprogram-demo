@@ -1,0 +1,17 @@
+<view class="container-component">
+  <view class="header-component">
+    <text class="title">API - 基础 - 系统</text>
+  </view>
+  <view class="body-component centered">
+    <view class="buttons">
+      <button type="primary" bindtap="windowInfo">窗口信息</button>
+      <button type="primary" bindtap="deviceInfo">设备信息</button>
+      <button type="primary" bindtap="systemInfo">系统信息</button>
+      <button type="primary" bindtap="appBaseInfo">微信基础信息</button>
+      <button type="primary" bindtap="systemSetting">设备设置</button>
+      <button type="primary" bindtap="appAuthorizeSetting">微信授权</button>
+      <button type="primary" bindtap="openAppAuthorizeSetting">打开授权页</button>
+      <button type="primary" bindtap="openSystemBluetoothSetting">打开安卓蓝牙设置</button>
+    </view>
+  </view>
+</view>

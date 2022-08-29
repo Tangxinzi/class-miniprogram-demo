@@ -1,0 +1,15 @@
+<view class="container-component">
+  <view class="header-component">
+    <text class="title">API - 网络</text>
+    <text class="description">
+      <block wx:for="{{ request.collections[0]['data'] }}" wx:key="request">{{ item.label }}</block>
+    </text>
+  </view>
+  <view class="body-component centered">
+    <view class="buttons">
+      <button type="primary" bindtap="request">请求</button>
+      <button type="primary" bindtap="download">下载</button>
+      <button type="primary" bindtap="upload">上传</button>
+    </view>
+  </view>
+</view>

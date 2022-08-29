@@ -1,0 +1,26 @@
+<view class="container-component">
+  <view class="header-component">
+    <text class="title">Media - 地图</text>
+  </view>
+  <view class="body-component centered">
+    <map 
+      id="map"
+      longitude="116.397128"
+      latitude="39.916527"
+      scale="12"
+      show-location="{{ true }}"
+      show-compass="{{ true }}"
+      markers="{{ markers }}"
+      style="height: 35vh;"
+    ></map>
+    <view class="buttons">
+      <button type="primary" bindtap="getCenterLocation">经纬度</button>
+      <button type="primary" bindtap="getScale">缩放级别</button>
+      <button type="primary" bindtap="moveToLocation">移动定位点</button>
+      <button type="primary" bindtap="getRegion">视野范围</button>
+      <button type="primary" bindtap="getRotate">旋转角</button>
+      <button type="primary" bindtap="getSkew">倾斜角</button>
+      <button type="primary" bindtap="translateMarker">移动标注</button>
+    </view>
+  </view>
+</view>

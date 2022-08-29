@@ -1,0 +1,20 @@
+<view class="container-component">
+  <view class="header-component">
+    <text class="title">Media - 视频</text>
+  </view>
+  <view class="body-component centered">
+    <video id="video" src="{{ src }}"></video>
+    <view class="buttons">
+      <button type="primary" bindtap="play">播放</button>
+      <button type="primary" bindtap="pause">暂停</button>
+      <button type="primary" bindtap="stop">停止</button>
+      <button type="primary" bindtap="seek">指定位置</button>
+      <button type="primary" bindtap="sendDanmu">弹幕</button>
+      <button type="primary" bindtap="playbackRate">倍速</button>
+      <button type="primary" bindtap="requestFullScreen">全屏</button>
+      <button type="primary" bindtap="exitFullScreen">退出全屏</button>
+      <button type="primary" bindtap="saveVideoToPhotoAlbum">保存视频</button>
+      <button type="primary" bindtap="getVideoInfo">视频信息</button>
+    </view>
+  </view>
+</view>

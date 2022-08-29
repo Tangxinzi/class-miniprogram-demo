@@ -1,0 +1,20 @@
+<view class="container-component">
+  <view class="header-component">
+    <text class="title">Media - 背景音频</text>
+  </view>
+  <view class="body-component centered">
+    <view class="progress">
+      <text>{{ currentTime }}</text>
+      <view class="line">
+        <view class="line" style="background-color: #000; width: {{ percent }};"></view>
+      </view>
+      <text>{{ duration }}</text>
+    </view>
+    <view class="buttons">
+      <button type="primary" bindtap="play">播放</button>
+      <button type="primary" bindtap="pause">暂停</button>
+      <button type="primary" bindtap="stop">停止</button>
+      <button type="primary" bindtap="seek">指定位置</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,14 @@
+<view class="container-component">
+  <view class="header-component">
+    <text class="title">界面 - 导航</text>
+  </view>
+  <view class="body-compoent centered">
+    <view class="buttons">
+      <button type="primary" bindtap="showNavigationBarLoading">导航条加载</button>
+      <button type="primary" bindtap="hideNavigationBarLoading">隐藏导航条加载</button>
+      <button type="primary" bindtap="setNavigationBarTitle">设置导航条标题</button>
+      <button type="primary" bindtap="setNavigationBarColor">设置导航条颜色</button>
+      <button type="primary" bindtap="hideHomeButton">隐藏返回首页</button>
+    </view>
+  </view>
+</view>

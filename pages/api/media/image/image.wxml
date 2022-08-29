@@ -1,0 +1,15 @@
+<view class="container-component">
+  <view class="header-component">
+    <text class="title">Media - 图片</text>
+  </view>
+  <view class="body-component centered">
+    <view class="buttons">
+      <button type="primary" bindtap="saveImageToPhotosAlbum">保存图片</button>
+      <button type="primary" bindtap="previewMedia">预览图片</button>
+      <button type="primary" bindtap="getImageInfo">图片信息</button>
+      <button type="primary" bindtap="compressImage">压缩图片</button>
+      <button type="primary" bindtap="editImage">编辑图片</button>
+      <button type="primary" bindtap="chooseMessageFile">选择文件</button>
+    </view>
+  </view>
+</view>

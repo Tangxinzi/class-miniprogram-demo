@@ -1,0 +1,14 @@
+<view class="container-component">
+  <view class="header-component">
+    <text class="title">设备 - 网络</text>
+    <text class="description">{{ desc }}</text>
+  </view>
+  <view class="body-component centered">
+    <view class="buttons">
+      <button type="primary" bindtap="networkType">网络类型</button>
+      <button type="primary" bindtap="localIPAddress">IP 地址</button>
+      <button type="primary" bindtap="networkStatusChange">监听网络状态</button>
+      <button type="primary" bindtap="networkWeakChange">监听弱网状态</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,23 @@
+<view class="container-component">
+  <view class="header-component">
+    <text class="title">Media - 相机</text>
+  </view>
+  <view class="body-component centered">  
+    <camera
+      id="camera"
+      style="height: 300px;"
+      mode="normal"
+      resolution="medium"
+      device-position="back"
+      flash="auto"
+      frame-size="medium"
+    >
+    </camera>
+    <view class="buttons">
+      <button type="primary" bindtap="takePhoto">拍摄照片</button>
+      <button type="primary" bindtap="setZoom">缩放级别</button>
+      <button type="primary" bindtap="startRecord">开始录像</button>
+      <button type="primary" bindtap="stopRecord">结束录像</button>
+    </view>
+  </view>
+</view>

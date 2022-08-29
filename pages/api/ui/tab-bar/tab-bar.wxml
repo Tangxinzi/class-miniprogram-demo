@@ -1,0 +1,17 @@
+<view class="container-component">
+  <view class="header-component">
+    <text class="title">界面 - tabBar</text>
+  </view>
+  <view class="body-component centered">
+    <view class="buttons">
+      <button type="primary" bindtap="hideTabBar">隐藏 tabBar</button>
+      <button type="primary" bindtap="showTabBar">显示 tabBar</button>
+      <button type="primary" bindtap="showTabBarRedDot">右上角红点</button>
+      <button type="primary" bindtap="hideTabBarRedDot">隐藏红点</button>
+      <button type="primary" bindtap="setTabBarBadge">右上角角标</button>
+      <button type="primary" bindtap="removeTabBarBadge">移除角标</button>
+      <button type="primary" bindtap="setTabBarStyle">整体设置 tabBar</button>
+      <button type="primary" bindtap="setTabBarItem">单个设置 tabBar</button>
+    </view>
+  </view>
+</view>
