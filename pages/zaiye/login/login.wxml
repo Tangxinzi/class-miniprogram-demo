@@ -1,0 +1,53 @@
+<view class="page login">
+  <view wx:if="{{ type == 0 }}">
+    <!-- swiper 滚动区域 -->
+    <view class="swiper">
+      <swiper autoplay="{{ true }}" indicator-dots="{{ true }}" indicator-color="rgba(0, 0, 0, 0.06)" indicator-active-color="#74FFC3" circular="{{ true }}">
+        <swiper-item wx:for="{{ swiper }}" wx:key="swiper">
+          <text class="title">{{ item.title }}</text>
+          <image class="{{ item.class }}" src="{{ item.image }}" mode="{{ item.mode }}" />
+        </swiper-item>
+      </swiper>
+    </view>
+    <!-- 底部按钮 -->
+    <view class="footer buttons">
+      <button type="default" class="flex-between wechat-login" open-type="getUserInfo" bindtap="getUserInfo">
+        <image src="/assets/zaiye/icons/wechat-login.png"></image>
+        <text>微信登录</text>
+      </button>
+      <view class="phone" bindtap="bindUserPhone">手机验证码登录</view>
+      <view class="radio">
+        <radio value="check" color="#000" /> 
+        <text>同意<text>《服务协议》</text>和<text>《隐私条款》</text></text>
+      </view>
+    </view>
+  </view>
+  <view wx:else>
+    <!-- 表单登录 -->
+    <view class="form">
+      <view class="input">
+        <label for="phone-number">手机号</label>
+        <input type="text" id="phone-number" class="phone-number" data-type="number" bindinput="input" placeholder="请输入手机号..." />
+      </view>
+      <view class="input">
+        <label for="phone-code">验证码</label>
+        <input type="text" id="phone-code" class="phone-code" data-type="code" bindinput="input" placeholder="请输入验证码..." />
+        <view class="getCode">获取验证码</view>
+      </view>
+    </view>
+    <!-- 底部按钮 -->
+    <view class="footer buttons">
+      <button type="default" class="flex-between wechat-login" bindtap="bindUserLogin">
+        <text>登录</text>
+      </button>
+      <view class="foot-button">
+        <view class="phone" bindtap="bindUserWechat">微信登录</view>
+        <navigator class="register" url="/pages/zaiye/register/register">注册</navigator>
+      </view>
+      <view class="radio">
+        <radio value="check" color="#000" bindtap="bindCheck" checked="{{ checked }}" /> 
+        <text>同意<text>《服务协议》</text>和<text>《隐私条款》</text></text>
+      </view>
+    </view>    
+  </view>
+</view>

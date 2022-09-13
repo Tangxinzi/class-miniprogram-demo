@@ -1,0 +1,115 @@
+<view class="page register">
+  <!-- 注册步骤 -->
+  <view class="steps">
+    <view class="step {{ item ? 'active' : ''}}" wx:for="{{ steps }}" wx:key="steps"></view>
+  </view>
+
+  <!-- 注册内容 -->
+  <swiper class="content" current="{{ current }}" bindchange="bindSwiperChange">
+    <swiper-item>
+      <view class="swiper-con">
+        <view class="field">
+          <view class="title">我的昵称</view>
+          <input class="input" type="text" bindinput="bindChange" data-type="nickname" placeholder="请填写你的昵称" />
+          <view class="wechat-login">
+            <image src="/assets/zaiye/icons/wechat-login.png"></image>
+            <text>使用微信登录</text>
+          </view>
+        </view>
+        <view class="field">
+          <view class="title">性别</view>
+          <view class="sex">
+            <view bindtap="bindSetSex" data-sex="1" class="span {{ user.sex == 1 ? 'active' : '' }}">男生</view>
+            <view bindtap="bindSetSex" data-sex="0" class="span {{ user.sex == 0 ? 'active' : '' }}">女生</view>
+            <view bindtap="bindSetSex" data-sex="2" class="span {{ user.sex == 2 ? 'active' : '' }}">其他</view>
+          </view>    
+        </view>
+        <view class="button" bindtap="next">
+          下一步
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="swiper-con">
+        <view class="field">
+          <view class="title">我的生日</view>
+          <picker class="input" mode="date" value="{{ birthday }}" start="1900-01-01" end="2099-12-31" bindchange="bindChange" data-type="birthday">
+            <text>{{ birthday }}</text>
+          </picker>
+        </view>
+        <view class="field">
+          <view class="title">常驻地</view>
+          <input class="input" bindinput="bindChange" data-type="address" type="text" />
+        </view>
+        <view class="button" bindtap="next">下一步</view>
+        <text class="back" bindtap="prev">返回</text>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="swiper-con">
+        <view class="field">
+          <view class="title">我的教育经历</view>
+          <text class="description">师出同门，给你相荐相助的力量</text>
+          <input class="input" type="text" bindinput="bindChange" data-type="school" placeholder="请填写你的学校" />
+        </view>
+        <view class="button" bindtap="next">下一步</view>
+        <text class="back" bindtap="prev">返回</text>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="swiper-con">
+        <view class="field">
+          <view class="title">我的职业身份</view>
+          <text class="description">请将出山，凭的是这身份线索</text>
+          <input class="input" type="text" bindinput="bindChange" data-type="profession" value="{{ user.professionText || '' }}" placeholder="填写你的真实职业" />
+        </view>
+        <view class="field">
+          <view class="title" style="font-size: 20px; color: #333;">热门选择</view>
+          <view class="labels">
+            <text class="label" bindtap="bindSetLabels" data-type="profession" data-text="{{ item }}" wx:for="{{ professions }}" wx:key="professions">{{ item }}</text>
+          </view>
+        </view>
+        <view class="check">
+          <radio bindtap="bindRadioChecked" checked="{{ user.checked }}"></radio>
+          <text>我是斜杠</text>
+          <image src="/assets/zaiye/icons/question.png" />
+        </view>
+        <view class="button" bindtap="next">下一步</view>
+        <text class="back" bindtap="prev">返回</text>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="swiper-con">
+        <view class="field">
+          <view class="title">我的专业技能</view>
+          <text class="description">行走江湖，靠的是艺多不压身</text>
+          <input class="input" type="text" value="{{ user.skillText || '' }}" placeholder="填写你可以提供的技能服务" />
+        </view>
+        <view class="field">
+          <view class="title" style="font-size: 20px; color: #333;">热门技能</view>
+          <view class="labels">
+            <text class="label" wx:for="{{ skills }}" wx:key="skills" bindtap="bindSetLabels" data-type="skill" data-text="{{ item }}">{{ item }}</text>
+          </view>
+        </view>
+        <view class="button" bindtap="next">下一步</view>
+        <text class="back" bindtap="prev">返回</text>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="swiper-con">
+        <view class="field">
+          <view class="title">个人标签</view>
+          <text class="description">气味相投更能互相欣赏</text>
+          <input class="input" type="text" value="{{ user.featureText || '' }}" placeholder="自定义你的个人标签" />
+        </view>
+        <view class="field">
+          <view class="title" style="font-size: 20px; color: #333;">关注领域</view>
+          <view class="labels">
+            <text class="label" wx:for="{{ skills }}" wx:key="skills" bindtap="bindSetLabels" data-type="feature" data-text="{{ item }}">{{ item }}</text>
+          </view>
+        </view>
+        <view class="button" bindtap="done">完成</view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

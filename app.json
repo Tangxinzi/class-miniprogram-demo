@@ -1,5 +1,5 @@
 {
-  "entryPagePath": "pages/api/base/base",
+  "entryPagePath": "pages/zaiye/login/login",
   "pages": [
     "pages/shop/index/index",
     "pages/shop/classify/classify",
@@ -58,7 +58,9 @@
     "pages/api/device/sms/sms",
     "pages/api/device/vibrate/vibrate",
     "pages/api/network/network",
-    "pages/api/base/base"
+    "pages/api/base/base",
+    "pages/zaiye/login/login",
+    "pages/zaiye/register/register"
   ],
   "window": {
     "backgroundTextStyle": "dark",

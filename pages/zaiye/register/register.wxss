@@ -1,0 +1,152 @@
+/* 注册步骤 */
+.steps {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.steps .step {
+  width: 13vw;
+  height: 6px;
+  background-color: rgba(0, 0, 0, 8%);
+  border-radius: 3px;
+}
+
+.steps .step.active {
+  background-color: #74FFC3;
+}
+
+/* 注册内容 */
+.content {
+  margin: 15px;
+  height: 90vh;
+  position: relative;
+}
+
+.content .field {
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.content .title {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.content .description {
+  color: #666;
+  position: relative;
+  top: -15px;
+}
+
+.content .input {
+  background-color: rgba(0,0,0, 6%);
+  padding: 15px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 8%);
+}
+
+.content .sex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.content .sex .span {
+  width: 20vw;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 8%);
+  font-weight: 400;
+}
+
+.content .sex .span.active {
+  background-color: #74FFC3;
+}
+
+.content .button {
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  background-color: #000;
+  color: #FFF;
+  border-radius: 20px;
+  text-align: center;
+  position: absolute;
+  bottom: 90px;
+  left: 0;
+}
+
+.content .back {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  position: absolute;
+  bottom: 55px;
+  left: 0;
+  color: #666;
+}
+
+.content .wechat-login {
+  background-color: #000;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 8px;
+  position: absolute;
+  font-size: 14px;
+  right: 9px;
+  bottom: 9px;
+}
+
+.content .wechat-login image {
+  width: 20px;
+  height: 18px;
+  margin-right: 5px;
+}
+
+/* 热门选择 */
+.labels .label {
+  background-color: rgba(0,0,0, 10%);
+  color: #666;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.check {
+  border: 2px solid #000;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  padding: 6px;
+  bottom: 180px;
+  left: 50%;
+  margin-left: -71.5px;
+}
+
+.check text {
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.check image {
+  width: 24px;
+  height: 24px;
+}
