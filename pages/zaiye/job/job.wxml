@@ -1,0 +1,47 @@
+<view class="page job">
+  <!-- 需求池 -->
+  <view class="classify">
+    <text class="title">需求池</text>
+    <view class="items">
+      <view class="item" wx:for="{{ [0, 1, 2, 3, 4, 5] }}">
+        <image src="https://zaiye.ferer.net/assets/images/white-image.png" mode="aspectFill"></image>
+        <text>{{ item + 1 }}</text>
+      </view>
+    </view>
+  </view>
+  <!-- 我的需求 -->
+  <view class="my-job">
+    <text class="title">我的需求</text>
+    <view class="status">
+      <text class="{{ status == 0 ? 'active' : '' }}" bindtap="switchStatus" data-status="0">招募中</text>
+      <text class="{{ status == 1 ? 'active' : '' }}" bindtap="switchStatus" data-status="1">待发布</text>
+      <text class="{{ status == 2 ? 'active' : '' }}" bindtap="switchStatus" data-status="2">已下线</text>
+    </view>
+    <view class="jobs">
+      <navigator url="/pages/zaiye/job-detail/job-detail?id={{ item.id }}" class="job" wx:for="{{ jobs }}" wx:key="job">
+        <view class="user-info">
+          <image class="avatar" src="https://zaiye.ferer.net/assets/images/white-image.png" mode="aspectFill"></image>
+          <view class="content">
+            <view>
+              <text class="username">{{ item.user.user_name }}</text>
+            </view>
+            <view class="flex-between">
+              <text>{{ item.user.user_introduction }}</text>
+              <text class="sign"></text>
+            </view>
+          </view>
+        </view>
+        <view class="job-info">
+          <text class="item">招募 {{ item.post }}</text>
+          <text class="item">预算 ¥{{ item.price }}起</text>
+          <text class="item">水平要求 {{ item.level }}</text>
+          <text class="item">联系方式 {{ item.contact || '' }}</text>
+          <text class="description">{{ item.content }}</text>
+        </view>
+        <view class="labels">
+          <text class="label" wx:for="{{ item.skill }}" wx:key="skill">{{ item }}</text>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,70 @@
+/* 消息类别 */
+.status {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.status text {
+  flex: 1;
+  text-align: center;
+  font-size: 14px;
+  padding: 8px;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.459);
+}
+
+.status text.active {
+  border-bottom-color: #333;
+}
+
+/* 消息列表 */
+.items .item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  color: #666;
+  font-size: 12px;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.459);
+}
+
+.items .item image.avatar {
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #CCC;
+}
+
+.items .item .content {
+  flex: 1;
+}
+
+.items .item .title {
+  margin-bottom: 3px;
+  font-size: 15px;
+  color: #000;
+}
+
+.items .item image.icon {
+  width: 25px;
+  height: 25px;
+  transform: rotate(-90deg);
+}
+
+/* 系统消息 */
+.systems .system {
+  padding: 0.5rem 1rem;
+  border: 1px solid #CCC;
+  margin: -1px;
+  font-size: 15px;
+}
+
+.systems .system .title {
+  font-weight: 600;
+}
+
+.systems .system .foot text {
+  color: #666;
+  margin-right: 15px;
+}

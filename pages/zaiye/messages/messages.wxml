@@ -1,0 +1,30 @@
+<view class="page messages">
+  <!-- 消息类别 -->
+  <view class="status">
+    <text class="{{ type == 0 ? 'active' : '' }}" bindtap="switchStatus" data-type="0">联系人</text>
+    <text class="{{ type == 1 ? 'active' : '' }}" bindtap="switchStatus" data-type="1">系统</text>
+  </view>
+
+  <!-- 消息列表 -->
+  <view class="items" wx:if="{{ type == 0 }}">
+    <view class="item" wx:for="{{ [0, 1, 2, 3] }}" wx:key="message">
+      <image class="avatar" src="https://zaiye.ferer.net/assets/images/white-image.png" mode="aspectFill"></image>
+      <view class="content">
+        <view class="title">联系人</view>
+        <view class="description">1分钟前</view>
+      </view>
+      <image class="icon" src="/assets/icon/product-down.png"></image>
+    </view>
+  </view>
+
+  <!-- 系统消息 -->
+  <view class="systems" wx:if="{{ type == 1 }}">
+    <view class="system" wx:for="{{ [0, 1, 2] }}" wx:key="systems">
+      <view class="title">系统标题</view>
+      <view class="content">系统内容系统内容系统内容系统内容系统内容系统内容系统内容系统内容</view>
+      <view class="foot">
+        <text>1小时前</text> <text>类别</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,19 @@
+/* 作品 */
+.work {
+  font-size: 0;
+}
+
+.work .title, .article .title {
+  font-size: 16px;
+  font-weight: 600;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  box-sizing: content-box;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+.article .detail {
+  padding: 1rem;
+}

@@ -1,0 +1,22 @@
+.page.home {
+  padding: 1rem;
+}
+
+.page.home .classify {
+  padding-left: 100px;
+  position: relative;
+  height: 100px;
+}
+
+.page.home .theme {
+  position: absolute;
+  left: 0;
+  width: 80px;
+  height: 80px;
+}
+
+.page.home .title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}

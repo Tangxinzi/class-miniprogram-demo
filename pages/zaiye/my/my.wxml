@@ -1,0 +1,66 @@
+<view class="page my">
+  <!-- 用户信息 -->
+  <view class="user">
+    <view class="user-info">
+      <image class="avatar" src="https://zaiye.ferer.net/{{ user.avatar.filePath + user.avatar.fileName }}" mode="aspectFill"></image>
+      <view class="info">
+        <view class="name">{{ user.user_name }}</view>
+        <view class="id">ID：{{ user.user_id }}</view>
+        <view class="ip">IP：{{ user.ip.city }}</view>
+      </view>
+    </view>
+    <view class="into">{{ user.user_introduction }}</view>
+    <view class="labels">
+      <text class="label" wx:for="{{ user.user_features }}" wx:key="user_features">{{ item.name }}</text>
+      <text class="label" wx:for="{{ user.user_fields }}" wx:key="user_fields">{{ item.name }}</text>
+      <text class="label" wx:for="{{ user.user_professions }}" wx:key="user_professions">{{ item.name }}</text>
+    </view>
+    <view class="counts">
+      <view class="count">
+        <text class="num">{{ user.fCount || 0 }}</text>
+        <text class="text">关注</text>
+      </view>
+      <view class="count">
+        <text class="num">{{ user.uCount || 0 }}</text>
+        <text class="text">被关注</text>
+      </view>
+      <view class="count">
+        <text class="num">{{ user.invite[0]['total'] || 0 }}</text>
+        <text class="text">人脉</text>
+      </view>
+    </view>
+  </view>
+  <view class="user skills">
+    <text class="title">专业技能</text>
+    <view class="labels">
+      <text class="label" wx:for="{{ user.user_skills }}" wx:key="user_skills">{{ item.name }}</text>
+    </view>
+  </view>
+
+  <!-- 我的创作 -->
+  <view class="my">
+    <view class="status">
+      <text class="{{ type == 'job' ? 'active' : '' }}" bindtap="switchStatus" data-type="job">需求</text>
+      <text class="{{ type == 'article' ? 'active' : '' }}" bindtap="switchStatus" data-type="article">专栏</text>
+      <text class="{{ type == 'work' ? 'active' : '' }}" bindtap="switchStatus" data-type="work">作品</text>
+    </view>
+    <view class="items">
+      <navigator url="{{ type == 'job' ? '/pages/zaiye/job-detail/job-detail?id=' + item.id : '/pages/zaiye/show/show?type=' + type + '&id=' + item.id }}" class="item" wx:for="{{ dataset }}" wx:key="dataset">
+        <image class="theme" src="https://zaiye.ferer.net/{{ item.file.fileSrc }}" mode="aspectFill"></image>
+        <view class="content">
+          <view class="title">
+            {{ type == 'job' ? item.post : '' }}
+            {{ type == 'article' ? item.article_title : '' }}
+            {{ type == 'work' ? item.work_title : '' }}
+          </view>
+          <view class="desc">
+            {{ type == 'work' ? item.work_description : '' }}
+          </view>
+          <view class="foot">
+            {{ item.created_at }}
+          </view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>

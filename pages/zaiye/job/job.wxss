@@ -1,0 +1,142 @@
+.page.job {
+  background-color: rgba(204, 204, 204, 0.342);
+  min-height: 100vh;
+  padding-bottom: 40px;
+}
+
+.flex-between {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* 需求池 */
+.classify {
+  background-color: #FFF;
+  padding: 1rem;
+}
+
+.classify .title, .my-job .title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.classify .items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.classify .items .item {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.classify .items .item image {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+}
+
+.classify .items .item text {
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+/* 我的需求 */
+.my-job .title {
+  margin-top: 10px;
+  margin-left: 1rem;
+}
+
+.my-job .status {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.my-job .status text {
+  flex: 1;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #FFF;
+  border-bottom: 1px solid #FFF;
+}
+
+.my-job .status text.active {
+  border-bottom: 1px solid #CCC;
+}
+
+.my-job .jobs .job {
+  padding: 1rem;
+  background-color: #FFF;
+  border-bottom: 0.5px solid #CCC;
+}
+
+.my-job .jobs .job .user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.my-job .jobs .job .user-info image {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #CCC;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.my-job .jobs .job .user-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.my-job .jobs .job .user-info text {
+  color: #666;
+  font-size: 12.5px;
+}
+
+.my-job .jobs .job .user-info text.username {
+  font-size: 18px;
+  color: #000;
+  margin-right: 5px;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.my-job .jobs .job .job-info text {
+  width: 50%;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.my-job .jobs .job .job-info text.description {
+  width: 100%;
+}
+
+.my-job .labels {
+  margin-top: 10px;
+}
+
+.my-job .labels .label {
+  background-color: aquamarine;
+  color: #000;
+  font-size: 14px;
+  padding: 4px 8px;
+  margin-right: 6px;
+  border-radius: 4px;
+}

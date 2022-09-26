@@ -1,0 +1,68 @@
+<view class="page job-detail">
+  <!-- 用户名片 -->
+  <view class="card">
+    <image class="avatar" src="{{ 'https://zaiye.ferer.net/' + job.user.avatar.filePath + job.user.avatar.fileName }}" mode="aspectFill"></image>
+    <view class="user-info">
+      <view style="margin-bottom: 10px;">
+        <text class="username">{{ job.user.user_name }}</text>
+      </view>
+      <text>发布于 {{ job.ip.city }}</text>
+    </view>
+    <view class="button">关注 ta</view>
+  </view>
+  <!-- 需求描述 -->
+  <view class="detail">
+    <view class="text">{{ job.content }}</view>
+    <view class="item">
+      <text class="key">招募</text>
+      <text class="value">{{ job.post }}</text>
+    </view>
+    <view class="item">
+      <text class="key">联系方式</text>
+      <text class="value">{{ job.contact }}</text>
+    </view>
+    <view class="item">
+      <text class="key">预算</text>
+      <text class="value">¥{{ job.price }}</text>
+    </view>
+    <view class="item">
+      <text class="key">技能水平要求</text>
+      <text class="value">{{ job.level }}</text>
+    </view>
+    <view class="item">
+      <text class="key">工作周期</text>
+      <text class="value">{{ job.cycleStart }} - {{ job.cycleEnd }}</text>
+    </view>
+    <view class="item">
+      <text class="key">发布时间</text>
+      <text class="value">{{ job.created_at }}</text>
+    </view>
+    <view class="labels">
+      <text class="label" wx:for="{{ job.needSkill }}" wx:key="labels">{{ item.name }}</text>
+    </view>
+  </view>
+  <!-- 评论留言 -->
+  <view class="comments">
+    <text class="det">留言询问更多细节</text>
+    <text class="num">留言 4</text>
+    <view class="comment" wx:for="{{ [0, 1, 2, 3] }}" wx:key="comment">
+      <image src="https://zaiye.ferer.net/assets/images/white-image.png" mode="aspectFill"></image>
+      <view class="user-info">
+        <text class="name">Dy</text>
+        <text class="desc">您好~</text>
+      </view>
+    </view>
+  </view>
+  <!-- 底部区域 -->
+  <view class="footer">
+    <view class="share button">
+      分享
+    </view>
+    <view class="collection button">
+      收藏
+    </view>
+    <view class="copy button">
+      复制联系方式
+    </view>
+  </view>
+</view>

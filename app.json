@@ -1,5 +1,5 @@
 {
-  "entryPagePath": "pages/zaiye/login/login",
+  "entryPagePath": "pages/zaiye/my/my",
   "pages": [
     "pages/shop/index/index",
     "pages/shop/classify/classify",
@@ -60,7 +60,14 @@
     "pages/api/network/network",
     "pages/api/base/base",
     "pages/zaiye/login/login",
-    "pages/zaiye/register/register"
+    "pages/zaiye/register/register",
+    "pages/zaiye/home/home",
+    "pages/zaiye/talent/talent",
+    "pages/zaiye/job/job",
+    "pages/zaiye/job-detail/job-detail",
+    "pages/zaiye/messages/messages",
+    "pages/zaiye/my/my",
+    "pages/zaiye/show/show"
   ],
   "window": {
     "backgroundTextStyle": "dark",

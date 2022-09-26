@@ -1,0 +1,96 @@
+<view class="page talent">
+  <!-- 筛选 -->
+  <view class="talent-header">
+    <view class="item {{ type == 'skills' ? 'active' : '' }}" bindtap="setModal" data-type="skills">专业技能</view>
+    <view class="item {{ type == 'keywords' ? 'active' : '' }}" bindtap="setModal" data-type="keywords">技能关键词</view>
+    <view class="item {{ type == 'professions' ? 'active' : '' }}" bindtap="setModal" data-type="professions">职业</view>
+    <view class="item {{ type == 'more' ? 'active' : '' }}" bindtap="setModal" data-type="more">更多</view>
+  </view>
+  <view class="modal" style="display: {{ modal ? 'block' : 'none' }};">
+    <view class="content">
+      <view class="labels" wx:if="{{ type == 'skills' }}">
+        <block wx:for="{{ skills }}" wx:key="skills">
+          <text class="label {{ item.active ? 'active' : '' }}" data-type="skills" data-id="{{ item.id }}" bindtap="setLabelActive">{{ item.name }}</text>
+        </block>
+      </view>
+      <view class="labels" wx:if="{{ type == 'keywords' }}">
+        <text class="title">类型 / 风格</text>
+        <block wx:for="{{ keywords }}" wx:key="keywords">
+          <text class="label {{ item.active ? 'active' : '' }}" data-type="keywords" data-id="{{ item.id }}" bindtap="setLabelActive">{{ item.name }}</text>
+        </block>
+        <text class="title">软件 / 设备</text>
+        <block wx:for="{{ keywords }}" wx:key="keywords">
+          <text class="label {{ item.active ? 'active' : '' }}" data-type="skills" data-id="{{ item.id }}" bindtap="setLabelActive">{{ item.name }}</text>
+        </block>
+      </view>
+      <view class="professions" wx:if="{{ type == 'professions' }}">
+        <view class="left items">
+          <view class="item active">编导</view>
+          <view class="item">制片</view>
+          <view class="item">摄影</view>
+          <view class="item">美术</view>
+          <view class="item">灯光</view>
+        </view>
+        <view class="right labels">
+          <block wx:for="{{ professions }}" wx:key="professions">
+            <text class="label {{ item.active ? 'active' : '' }}" data-type="professions" data-id="{{ item.id }}" bindtap="setLabelActive">{{ item.name }}</text>
+          </block>
+        </view>
+      </view>
+      <view class="more" wx:if="{{ type == 'more' }}">
+        <text class="title">认证信息</text>
+        <view class="item info flex-around">
+          <text>已实名认证</text>
+          <text>已技能认证</text>
+          <text>平台签约</text>
+        </view>
+        <text class="title">所在地</text>
+        <view class="item address flex-between">
+          <text class="add active">不限</text>
+          <text class="add">北京</text>
+        </view>
+        <text class="title">学历要求</text>
+        <view class="education item">
+          <text class="edu active">不限</text>
+          <text class="edu">初中及以下</text>
+          <text class="edu">中专/技校</text>
+          <text class="edu">高中</text>
+          <text class="edu">大专</text>
+          <text class="edu">本科</text>
+          <text class="edu">硕士</text>
+          <text class="edu">博士</text>
+        </view>
+      </view>
+      <view class="buttons">
+        <view class="button clear">清空</view>
+        <view class="button submit" bindtap="submit">确定</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 人物 -->
+  <view class="cards">
+    <view class="card" wx:for="[0, 1, 2, 3, 4]" wx:key="card">
+      <view class="user-people">
+        <image src="/assets/zaiye/logo.png" mode="aspectFit"></image>
+        <view class="name">
+          <text class="nickname">在野</text> <text class="label">已认证</text>
+        </view>
+        <text class="peoples">人脉</text>
+      </view>
+      <view class="user-info">
+        <view class="perfession">导演 / 编剧 / 产品</view>
+        <text class="location">北京朝阳</text>
+        <view class="labels">
+          <text class="label">后期</text>
+          <text class="label">设计</text>
+        </view>
+        <view class="description">描述信息</view>
+        <view class="skill-labels">
+          <text class="label">后期</text>
+          <text class="label">设计</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

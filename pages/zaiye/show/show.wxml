@@ -1,0 +1,20 @@
+<view class="page show">
+  <!-- 作品 -->
+  <view class="work" wx:if="{{ options.type == 'work' }}">
+    <text class="title">{{ data.work_title || '' }}</text>
+    <view class="detail" wx:if="{{ data.work_type == 1 }}">
+      <image src="{{ 'https://zaiye.ferer.net/' + item.url }}" wx:for="{{ data.image }}" wx:key="image" style="width: 100%;"></image>
+    </view>
+    <view class="detail" wx:if="{{ data.work_type == 0 }}">
+      <video src="{{ 'https://zaiye.ferer.net/' + data.video.fileSrc }}" poster="{{ 'https://zaiye.ferer.net/' + data.file.fileSrc }}" style="width: 100%;"></video>
+    </view>
+  </view>
+
+  <!-- 文章 -->
+  <view class="article" wx:if="{{ options.type == 'article' }}">
+    <text class="title">{{ data.article_title || '' }}</text>
+    <view class="detail">
+      <rich-text nodes="{{ data.article_detail }}"></rich-text>
+    </view>
+  </view>
+</view>

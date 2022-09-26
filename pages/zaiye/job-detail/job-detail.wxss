@@ -1,0 +1,125 @@
+.page.job-detail {
+  padding-bottom: 100px;
+}
+
+/* 用户名片 */
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+  font-size: 14px;
+  color: #666;
+}
+
+.card .avatar {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #CCC;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.card .user-info {
+  flex: 1;
+}
+
+.card .user-info .username {
+  font-size: 18px;
+  margin-right: 5px;
+  color: #000;
+  font-weight: 600;
+}
+
+.card .button {
+  background-color: chartreuse;
+  color: #000;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+/* 需求描述 */
+.detail {
+  border-top: 0.5px solid #CCC;
+  padding: 1rem;
+}
+
+.detail .item, .detail .labels {
+  margin-top: 10px;
+}
+
+.detail .item .key {
+  width: 35%;
+  display: inline-block;
+}
+
+.detail .labels .label {
+  background-color: chartreuse;
+  color: #000;
+  padding: 6px 8px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+/* 评论留言 */
+.comments {
+  border-top: 0.5px solid #CCC;
+  padding: 1rem;
+  font-size: 14px;
+}
+
+.comments .det {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  background-color: rgba(204, 204, 204, 0.371);
+  padding: 8px 0;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.comments .comment {
+  display: flex;
+  margin-top: 10px;
+}
+
+.comments .comment image {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #CCC;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.comments .comment .name {
+  font-weight: 600;
+  display: block;
+}
+
+/* 底部区域 */
+.footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #FFF;
+  width: 100%;
+  border-top: 1px solid #CCC;
+  padding: 1rem 1rem 2rem;
+  display: flex;
+}
+
+.footer .button {
+  background-color: rgba(204, 204, 204, 0.63);
+  padding: 6px 8px;
+  border-radius: 4px;
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.footer .copy {
+  position: absolute;
+  right: 3rem;
+  margin: 0;
+}

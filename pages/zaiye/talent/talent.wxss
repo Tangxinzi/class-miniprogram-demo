@@ -1,0 +1,251 @@
+.page.talent {
+  background-color: #e3e3e3;
+  padding-bottom: 3rem;
+}
+
+/* 筛选 */
+.talent-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  height: 50px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.talent-header .item.active {
+  color: #16b470;
+}
+
+.modal {
+  position: absolute;
+  width: 100%;
+  height: calc(100vh - 50px);
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.modal .content {
+  background-color: #FFF;
+  padding: 1rem;
+}
+
+.modal .content .title {
+  font-size: 14px;
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #333;
+}
+
+.modal .content .labels {
+  font-size: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.modal .content .label {
+  font-size: 14px;
+  width: calc((100vw - 4rem) / 3);
+  box-sizing: border-box;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 5px 8px;
+  margin-bottom: 10px;
+  display: inline-block;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 36px;
+  line-height: 36px;
+  padding-top: 0;
+  padding-bottom: 0;  
+}
+
+.modal .content .label.active {
+  background-color: #65ca0c;
+  color: #FFF;
+}
+
+.modal .content .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.modal .content .button {
+  text-align: center;
+  margin: -1px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: calc((100vw - 3rem) / 2);
+  padding: 8px 10px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.modal .content .professions {
+  display: flex;
+  flex-direction: row;
+  margin: -1rem -1rem 0;
+}
+
+.modal .content .professions .left {
+  width: 80px;
+  font-size: 14px;
+  text-align: center;
+  color: #FFF;
+  background-color: rgb(133, 133, 133);
+}
+
+.modal .content .professions .left .item {
+  height: 40px;
+  line-height: 40px;
+}
+
+.modal .content .professions .left .item.active {
+  color: #000;
+  background-color: #FFF;
+}
+
+.modal .content .professions .right {
+  width: calc(100vw - 80px);
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.modal .content .professions .right .label {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 28%;
+  font-size: 14px;
+  height: 36px;
+  line-height: 36px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.modal .more .item {
+  margin-bottom: 20px;
+}
+
+.modal .more .flex-around {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.modal .more .address .add {
+  border: 1px solid #CCC;
+  border-radius: 14px;
+  margin-right: 10px;
+  padding: 4px 12px;
+  display: inline-block;
+}
+
+.modal .more .active {
+  background-color: #a9f16977;
+}
+
+.modal .more .education .edu {
+  border: 1px solid #CCC;
+  border-radius: 4px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 4px 12px;
+  display: inline-block;
+}
+
+/* 人物卡片部分 */
+.cards .card {
+  margin: 0 1rem 1rem;
+  padding: 0.75rem;
+  border-radius: 5px;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: row;
+}
+
+.cards .card image {
+  width: 80px;
+  height: 80px;
+}
+
+.cards .card .name {
+  position: relative;
+}
+
+.cards .card .name .nickname {
+  font-size: 18px;    
+  width: 80%;
+  text-align: center;
+  display: inline-block;
+}
+
+.cards .card .peoples {
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  color: #65ca0c;
+}
+
+.cards .card .name .label {
+  background-color: #000;
+  color: #FFF;
+  font-size: 10px;
+  padding: 3px 6px;
+  border-radius: 10px;
+  position: absolute;
+  top: -12px;
+  right: 0;
+}
+
+.cards .card .user-info {
+  margin-left: 1rem;
+}
+
+.cards .card .user-info .professions {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.cards .card .user-info .location {
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.cards .card .user-info .labels .label {
+  background-color: #000;
+  color: #FFF;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 13px;
+  margin-right: 4px;
+}
+
+.cards .card .description {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.cards .card .user-info .skill-labels .label {
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 13px;
+  margin-right: 4px;
+}

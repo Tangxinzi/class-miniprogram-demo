@@ -1,0 +1,7 @@
+<view class="page home">
+  <navigator url="/pages/zaiye/talent/talent" class="classify" wx:for="{{ classify }}" wx:key="classify">
+    <image class="theme" src="{{ item.src }}" mode="aspectFit" />
+    <view class="title">{{ item.title }}</view>
+    <text class="description">{{ item.description }}</text>
+  </navigator>
+</view>
