@@ -1,0 +1,14 @@
+<mp-cells>
+  <mp-cell>
+    <mp-uploader 
+      title="图片上传" 
+      tips="提示" 
+      max-count="5"
+      upload="{{ uploadFile }}"
+      select="{{ selectFile }}"
+      binddelete="uploadDelete"
+      bindsuccess="uploadSuccess"
+      bindfail="uploadFail"
+    ></mp-uploader>
+  </mp-cell>
+</mp-cells>

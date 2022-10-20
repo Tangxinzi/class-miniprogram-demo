@@ -1,0 +1,5 @@
+<mp-navigation-bar back="{{ true }}" bindback="back" background="#F8f8f8" color="#333333" loading="{{ false }}" show="{{ true }}">
+  <view slot="center">小程序</view>
+</mp-navigation-bar>
+<mp-searchbar search="{{ search }}" bindselectresult="selectResult" bindfocus="focus" bindblur="blur" bindclear="clear" bindinput="input"></mp-searchbar>
+<mp-tabbar class="tabbar" list="{{ list }}" bindchange="change"></mp-tabbar>

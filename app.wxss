@@ -50,3 +50,16 @@ form {
   display: block;
   margin-bottom: 10px;
 }
+
+/* weui */
+.page__hd {
+  padding: 2rem;
+}
+
+.page__hd .page__title {
+  font-size: 20px;
+}
+
+.page__hd .page__desc {
+  color: #888;
+}

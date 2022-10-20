@@ -1,0 +1,18 @@
+<mp-msg type="" icon="/assets/zaiye/logo.png" title="操作">
+  <view slot="desc">
+    <navigator class="weui-msg__link" url="">Mini-program</navigator>
+  </view>
+  <view slot="extend">
+    <view>描述内容</view>
+  </view>
+  <view slot="handle">
+    <button class="weui-btn" type="primary">主要操作</button>
+    <button class="weui-btn" type="default">辅助操作</button>
+  </view>
+  <view slot="footer">
+    <view class="weui-footer__link">
+      <navigator url="" class="weui-footer__link">链接</navigator>
+    </view>
+    <view class="weui-footer__text">Copyright 2022</view>
+  </view>
+</mp-msg>

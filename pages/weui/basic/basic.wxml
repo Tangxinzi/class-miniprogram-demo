@@ -1,0 +1,48 @@
+<view class="ui weui page">
+  <view class="page__hd">
+    <view class="page__title">Badge</view>
+    <view class="page__desc">徽章</view>
+  </view>
+  <view class="page__bd">
+    <mp-cells title="消息提示">
+      <mp-cell title="列表">
+        <view slot="footer">
+          <mp-badge content="未读" />
+        </view>
+      </mp-cell>
+      <mp-cell title="列表">
+        <view slot="footer">
+          <mp-badge content="8" />
+        </view>
+      </mp-cell>
+      <mp-cell title="列表">
+        <view slot="footer">
+          <mp-badge content="new" />
+        </view>
+      </mp-cell>
+    </mp-cells>
+  </view>
+  <view class="page__hd">
+    <view class="page__title">Gallery</view>
+    <view class="page__desc">画廊</view>
+  </view>
+  <mp-cells>
+    <mp-cell title="打开画廊" bindtap="openGallery" link></mp-cell>
+  </mp-cells>
+  <mp-gallery show="{{ show }}" img-urls="{{ imgUrls }}" current="0" bindchange="change" binddelete="delete" bindhide="hide" showDelete="{{ true }}" hideOnClick="{{ true }}"></mp-gallery>
+  <view class="page__hd">
+    <view class="page__title">Loading</view>
+    <view class="page__desc">加载</view>
+  </view>
+  <mp-cells>
+    <mp-cell title="加载" bindtap="loading" link></mp-cell>
+  </mp-cells>
+  <mp-loading duration="900" show="{{ loadingShow }}" type="circle" tips="loading..."></mp-loading>
+  <view class="page__hd">
+    <view class="page__title">Icon</view>
+    <view class="page__desc">图标</view>
+  </view>
+  <mp-icon type="outline" icon="me" size="{{ 24 }}" color="blue"></mp-icon>
+  <mp-icon type="field" icon="me" size="{{ 24 }}" color="blue"></mp-icon>
+  <mp-icon type="field" icon="tv" size="{{ 24 }}" color="blue"></mp-icon>
+</view>

@@ -1,0 +1,22 @@
+<mp-form-page title="操作反馈">
+  <!-- Dialog -->
+  <mp-dialog title="Dialog" show="{{ showDialog }}" buttons="{{ dialogButtons }}" bindbuttontap="tapDialogButton">
+    <text>Dialog 弹窗组件</text>
+  </mp-dialog>
+  <button class="button" type="primary" bindtap="openDialog">Dialog</button>
+
+  <!-- Toptips -->
+  <mp-toptips msg="info" type="info" show="{{ infoShow }}" delay="2000" bindhide="hide"></mp-toptips>
+  <button class="button" type="primary" bindtap="infoToptips">info toptips</button>
+
+  <!-- ActionSheet -->
+  <mp-actionsheet title="ActionSheet" show="{{ showActionSheet }}" actions="{{ groups }}" bindclose="close" bindactiontap="action" mask="{{ true }}"></mp-actionsheet>
+  <button class="button" type="primary" bindtap="openActionSheet">ActionSheet</button>
+
+  <!-- Half-Screen-Dialog -->
+  <mp-half-screen-dialog title="Half-Screen-Dialog" subTitle="HSD" show="{{ showHSD }}" buttons="{{ hsdButtons }}" bindbuttontap="hsdButtonTap">
+    <view slot="desc">描述信息</view>
+    <view slot="tips">提示信息</view>
+  </mp-half-screen-dialog>
+  <button class="button" type="primary" bindtap="openHSD">HSD</button>
+</mp-form-page>

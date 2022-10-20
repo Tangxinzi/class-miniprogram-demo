@@ -1,0 +1,9 @@
+<mp-cells title="列表项" footer="底部说明文字">
+  <mp-slideview show="{{ show }}" buttons="{{ buttons }}" bindbuttontap="slideButtonTap" bindshow="bindShow" bindhide="bindHide">
+    <mp-cell ext-class="" hover="{{ true }}" link="{{ true }}">
+      <mp-icon slot="icon" type="field" icon="me" color="black" />
+      <text class="title" slot="title">列表标题</text>
+      <text slot="footer">查看</text>
+    </mp-cell>
+  </mp-slideview>
+</mp-cells>

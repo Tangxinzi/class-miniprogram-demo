@@ -1,0 +1,49 @@
+<mp-toptips msg="{{ error }}" type="error" show="{{ error }}"></mp-toptips>
+<mp-form-page title="Form 表单组件" subtitle="表单页面">
+  <mp-form id="form" rules="{{ rules }}" models="{{ formData }}">
+    <mp-cells title="单选列表">
+      <mp-checkbox-group prop="radio" multi="{{ false }}" bindchange="radioChange">
+        <mp-checkbox wx:for="{{ radioItems }}" wx:key="radio" label="{{ item.name }}" value="{{ item.value }}" checked="{{ item.checked }}"></mp-checkbox>
+      </mp-checkbox-group>
+    </mp-cells>
+    <mp-cells title="复选列表">
+      <mp-checkbox-group prop="checkbox" multi="{{ true }}" bindchange="checkboxChange">
+        <mp-checkbox wx:for="{{ checkboxItems }}" wx:key="checkbox" label="{{ item.name }}" value="{{ item.value }}" checked="{{ item.checked }}"></mp-checkbox>
+      </mp-checkbox-group>
+    </mp-cells>
+    <mp-cells title="表单" footer="底部说明">
+      <mp-cell prop="name" title="姓名">
+        <input bindinput="formInputChange" data-field="name" placeholder="请输入姓名" />
+      </mp-cell>
+      <mp-cell prop="qq" title="QQ">
+        <input bindinput="formInputChange" data-field="qq" placeholder="请输入 QQ" />
+      </mp-cell>
+      <mp-cell prop="mobile" title="手机号">
+        <input bindinput="formInputChange" data-field="mobile" placeholder="请输入手机号" />
+        <button slot="footer" type="default" size="mini">获取验证码</button>
+      </mp-cell>
+      <mp-cell prop="switch" title="开关">
+        <switch slot="footer" checked="" />
+      </mp-cell>
+    </mp-cells>
+    <mp-cells class="文本域">
+      <mp-cell has-header="{{ false }}" has-footer="{{ false }}">
+        <textarea name="" id="" placeholder="请输入文本..." cols="30" rows="10"></textarea>
+        <view class="weui-textarea-counter">0/200</view>
+      </mp-cell>
+    </mp-cells>
+  </mp-form>
+  <checkbox-group slot="tips" bindchange="bindAgreeChage">
+    <label for="" class="weui-agree" style="display: flex; align-items: center; justify-content: center;">
+      <checkbox class="weui-agree__checkbox-check" />
+      <text class="weui-agree__checkbox"></text>
+      <view class="weui-agree__text">阅读并同意<navigator>《相关条款》</navigator></view>
+    </label>
+  </checkbox-group>
+  <view slot="button">
+    <button type="primary" bindtap="submitForm">确定</button>
+  </view>
+  <view slot="footer">
+    <text>footer</text>
+  </view>
+</mp-form-page>

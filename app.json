@@ -1,5 +1,5 @@
 {
-  "entryPagePath": "pages/zaiye/my/my",
+  "entryPagePath": "pages/weui/flex/flex",
   "pages": [
     "pages/shop/index/index",
     "pages/shop/classify/classify",
@@ -67,7 +67,15 @@
     "pages/zaiye/job-detail/job-detail",
     "pages/zaiye/messages/messages",
     "pages/zaiye/my/my",
-    "pages/zaiye/show/show"
+    "pages/zaiye/show/show",
+    "pages/weui/basic/basic",
+    "pages/weui/form/form",
+    "pages/weui/cells/cells",
+    "pages/weui/uploader/uploader",
+    "pages/weui/operation/operation",
+    "pages/weui/msg/msg",
+    "pages/weui/navigation/navigation",
+    "pages/weui/flex/flex"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -120,6 +128,9 @@
     "getLocation",
     "chooseLocation"
   ],
+  "useExtendedLib": {
+    "weui": true
+  },
   "debug": false,
   "style": "v2",
   "sitemapLocation": "sitemap.json"
