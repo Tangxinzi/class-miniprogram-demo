@@ -1,0 +1,9 @@
+page {
+  width: 100vw;
+  height: 100vh;
+}
+
+mp-video-swiper {
+  width: 100vw;
+  height: 100vh;
+}

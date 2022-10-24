@@ -1,0 +1,6 @@
+<wxml-to-canvas class="widget"></wxml-to-canvas>
+
+<button bindtap="renderToCanvas" type="primary">渲染 Canvas</button>
+<button bindtap="exportImage" type="primary">导出 Image</button>
+
+<image src="{{ src }}" style="width: {{ width }}; height: {{ height }};" />

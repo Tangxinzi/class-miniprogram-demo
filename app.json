@@ -1,5 +1,5 @@
 {
-  "entryPagePath": "pages/weui/flex/flex",
+  "entryPagePath": "pages/component-plus/canvas/canvas",
   "pages": [
     "pages/shop/index/index",
     "pages/shop/classify/classify",
@@ -75,7 +75,12 @@
     "pages/weui/operation/operation",
     "pages/weui/msg/msg",
     "pages/weui/navigation/navigation",
-    "pages/weui/flex/flex"
+    "pages/weui/flex/flex",
+    "pages/component-plus/video-swiper/video-swiper",
+    "pages/component-plus/sticky/sticky",
+    "pages/component-plus/grid/grid",
+    "pages/component-plus/wxml-to-canvas/wxml-to-canvas",
+    "pages/component-plus/canvas/canvas"
   ],
   "window": {
     "backgroundTextStyle": "dark",

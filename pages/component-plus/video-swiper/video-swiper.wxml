@@ -1,0 +1,1 @@
+<mp-video-swiper video-list="{{ videoList }}" duration="400" loop="{{ true }}" bindchange="change" bindplay="play" bindpause="pause" bindwaiting="waiting"></mp-video-swiper>

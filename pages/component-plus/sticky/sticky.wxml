@@ -1,0 +1,7 @@
+<view id="container">
+  <view style="background-color: grey; height: 300px;"></view>
+  <mp-sticky container="{{ container }}" offset-top="60">
+    <button type="primary">sticky</button>
+  </mp-sticky>
+  <view style="background-color: grey; height: 300px;"></view>
+</view>

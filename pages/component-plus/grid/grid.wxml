@@ -1,0 +1,5 @@
+<mp-row>
+  <mp-col span="{{ 8 }}" sm="{{ sm }}">
+    <view class="col"></view>
+  </mp-col>
+</mp-row>

@@ -1,0 +1,4 @@
+/* pages/component-plus/sticky/sticky.wxss */
+#container {
+  height: 2000px;
+}
